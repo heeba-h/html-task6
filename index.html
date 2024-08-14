@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <h2>Survey Form</h2>
+
+    <form>
+        <!-- Text Input for Short Answer -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <!-- Textarea for Longer Responses -->
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" ></textarea><br><br>
+
+        <!-- Multiple Choice (Radio Buttons) -->
+        <label>How did you hear about us?</label><br>
+        <input type="radio" id="option1" name="source" value="internet" >
+        <label for="option1">Internet</label><br>
+        <input type="radio" id="option2" name="source" value="friend">
+        <label for="option2">Friend</label><br>
+        <input type="radio" id="option3" name="source" value="advertisement">
+        <label for="option3">Advertisement</label><br><br>
+
+        <!-- Checkbox for Multiple Selections -->
+        <label>What features do you use most often? (Select all that apply)</label><br>
+        <input type="checkbox" id="feature1" name="features" value="feature1">
+        <label for="feature1">Feature 1</label><br>
+        <input type="checkbox" id="feature2" name="features" value="feature2">
+        <label for="feature2">Feature 2</label><br>
+        <input type="checkbox" id="feature3" name="features" value="feature3">
+        <label for="feature3">Feature 3</label><br><br>
+
+        <!-- Dropdown Menu -->
+        <label for="experience">Overall Experience:</label><br>
+        <select id="experience" name="experience" required>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select><br><br>
+
+        <!-- Rating Scale -->
+        <label>Rate our service (1 to 5):</label><br>
+        <input type="radio" id="rate1" name="rating" value="1" required>
+        <label for="rate1">1</label><br>
+        <input type="radio" id="rate2" name="rating" value="2">
+        <label for="rate2">2</label><br>
+        <input type="radio" id="rate3" name="rating" value="3">
+        <label for="rate3">3</label><br>
+        <input type="radio" id="rate4" name="rating" value="4">
+        <label for="rate4">4</label><br>
+        <input type="radio" id="rate5" name="rating" value="5">
+        <label for="rate5">5</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
